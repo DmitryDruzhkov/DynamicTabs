@@ -1,0 +1,10 @@
+<ng-template #tabHeader>
+  <div (click)="onClick.emit()">
+    <ng-content select="[tab]"></ng-content>
+  </div>
+</ng-template>
+<ng-template #tabContent>
+  <ng-content select="[content]"></ng-content>
+</ng-template>
+  
+
